@@ -1,0 +1,156 @@
+*{
+	font-family: 'Roboto';
+}
+header{
+  background: #009688;
+  height: 150px;
+  }
+body{
+  background: #ddd;
+}
+/*toda la ventana*/
+.box{
+  border: solid 1px #bbb;
+  position: absolute;
+  left: 15%;
+  top: 40px;
+  width: 70%;
+  height: 600px;
+  background: #fff;
+}
+.columna{
+  width: 40%;
+  height: 100%;
+  border-right: solid 1px #bbb;
+}
+
+/*renglones de la ventana*/
+.block{
+  width: 60%;
+  height: 100%;
+  box-sizing: border-box;
+  margin:0px;
+  position: relative;
+  float: right;
+}
+
+/*titulos grises*/
+.head{
+  background:#eee;
+  width: 100%;
+  height: 50px;
+  border-bottom: solid 1px #bbb;
+}
+/*Convertir todo en lineal*/
+.lineal{
+  display: inline-block;
+}
+
+/*Barra de busqueda*/
+.searchy{
+  width: 100%;
+  height: 50px;
+  border-bottom: solid 1px #bbb;
+  padding: 7px;
+  position: relative;
+  background-color: #FAFAFA;
+}
+.serchy input {
+    padding-right: 30px;    
+}
+
+.serchy i {
+    position: absolute;
+    z-index: 1;
+    right: 0px;  /*arregla esto*/
+    padding: 10px 12px;
+    pointer-events: none;
+}
+
+
+.chatopa{
+  background-color: gray;
+  overflow-y: scroll;
+  width: 100%;
+  height:500px;
+  border-bottom: solid 1px #bbb;
+  position: relative;
+  bottom: 15px;
+  opacity: 
+}
+/*Barra deslizante*/
+.scroll{
+  overflow-y: scroll;
+  width: 100%;
+  height:500px;
+  overflow-x:none;
+}
+/*Contactos imagenes/nombre*/
+.bubble{
+  border-radius: 100%;
+  width: 40px;
+  margin:4px;
+}
+.contact{
+  height: 60px;
+  padding: 10px;
+  border-bottom: solid 1px #bbb;
+  width: 100%
+
+}
+/*iconos*/
+.grey-icon i{
+	margin: 0 10px;
+	position: relative;
+	top:-35px;
+	color: #6E6E6E;
+}
+
+h5{
+	margin-top: 40px;
+	font-weight: bold;
+	position: relative;
+	bottom: 95px;
+	left: 60px;
+}
+
+p{
+	margin-top:8px;
+	position: relative;
+	bottom: 100px;
+	left: 60px;
+	font-size: 12px;
+}
+/*titulo del chat*/
+#logochat{
+	position: relative;
+	bottom: 10px;
+}
+
+/*barra de chat*/
+
+
+.movicon{
+    margin: 1px;
+    position: relative;
+    top: 25px;
+}
+.chat-input input {
+    margin-right: 30px; 
+    position: relative;
+    width: 450px;
+    left: 50px;  
+    bottom: 40px;
+}
+
+.chat{
+  background:url(../image/chat-panel-bg.png);
+  background-color: #F7F8E0;
+  overflow-y: scroll;
+  width: 100%;
+  height:500px;
+  border-bottom: solid 1px #bbb;
+  position: relative;
+  bottom: 15px;
+
+}	
