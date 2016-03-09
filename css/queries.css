@@ -3,8 +3,14 @@
 }
 
 @media screen and (max-width:760px) {
-    div.block {
+    div.masterblock{
         display: none;
+    }
+    div.block-master-chat{
+    	display: none;
+    }
+    div.col-chat{
+    	width: 100%;
     }
 }
 
