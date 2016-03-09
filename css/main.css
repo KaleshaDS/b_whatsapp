@@ -1,6 +1,3 @@
-*{
-	font-family: 'Roboto';
-}
 header{
   background: #009688;
   height: 150px;
@@ -8,8 +5,8 @@ header{
 body{
   background: #ddd;
 }
-/*toda la ventana*/
-.box{
+/*Contenedor*/
+.masterbox{
   border: solid 1px #bbb;
   position: absolute;
   left: 15%;
@@ -18,14 +15,14 @@ body{
   height: 600px;
   background: #fff;
 }
-.columna{
+
+/*VENTANA DEL CHAT*/
+.col-chat{
   width: 40%;
   height: 100%;
   border-right: solid 1px #bbb;
 }
-
-/*renglones de la ventana*/
-.block{
+.block-master-chat{
   width: 60%;
   height: 100%;
   box-sizing: border-box;
@@ -33,124 +30,153 @@ body{
   position: relative;
   float: right;
 }
-
-/*titulos grises*/
-.head{
+/*Fondo de chat*/
+.chat{
+  background:url(../image/chat-panel-bg.png);
+  width: 100%;
+  height:500px;
+  border-bottom: solid 1px #bbb;
+}
+/*VENTANA DE CONTACTOS Y CHATS*/
+/*Perfil del usuario*/
+.head-user{
   background:#eee;
   width: 100%;
   height: 50px;
   border-bottom: solid 1px #bbb;
 }
-/*Convertir todo en lineal*/
-.lineal{
+.inline{
   display: inline-block;
 }
-
 /*Barra de busqueda*/
-.searchy{
+.search-bar{
   width: 100%;
   height: 50px;
   border-bottom: solid 1px #bbb;
   padding: 7px;
+}
+.hour{
+  font-size: 10px;
+  float: right;
+  margin-top: 8px;
   position: relative;
-  background-color: #FAFAFA;
+  bottom: 130px;
+  left: 10px;
 }
-.serchy input {
-    padding-right: 30px;    
+.hora{
+  float: right;
+  margin-top: 10px;
 }
-
-.serchy i {
-    position: absolute;
-    z-index: 1;
-    right: 0px;  /*arregla esto*/
-    padding: 10px 12px;
-    pointer-events: none;
-}
-
-
-.chatopa{
-  background-color: gray;
-  overflow-y: scroll;
-  width: 100%;
-  height:500px;
-  border-bottom: solid 1px #bbb;
-  position: relative;
-  bottom: 15px;
-  opacity: 
-}
-/*Barra deslizante*/
+/*Scroll*/
 .scroll{
   overflow-y: scroll;
   width: 100%;
   height:500px;
-  overflow-x:none;
+  overflow-x:hidden;
 }
-/*Contactos imagenes/nombre*/
+.scroll::-webkit-scrollbar{
+  width: 10px;
+  background: #848484;
+}
+.scroll::-webkit-scrollbar-button{
+  width:8px;
+  height: 5px;
+}
+.scroll::-webkit-scrollbar-track{
+  background:#848484;;
+  border:thin solid #848484;;
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+}
+.scroll::-webkit-scrollbar-thumb{
+  background: #6E6E6E;
+  border:thin solid #6E6E6E;
+  border-radius: 10px; 
+}
+.scroll::-webkit-scrollbar-thumb:hover{
+    background: #424242;
+}
+/* Pseudo-clase del scroll*/
+.scroll::-webkit-scrollbar-thumb:window-inactive {
+  background: rgba(77,161,112,.6);
+}
+
+/*mini vistas de perfiles*/
 .bubble{
+  margin-top: -10px; 
   border-radius: 100%;
   width: 40px;
-  margin:4px;
+  height:40px;
 }
-.contact{
-  height: 60px;
+.avatar{
+  border-radius: 100%;
+  width:35px;
+  height: 35px;
+  margin:8px;
+}
+.contacts-chat{
+  height: 75px;
   padding: 10px;
   border-bottom: solid 1px #bbb;
   width: 100%
-
 }
-/*iconos*/
-.grey-icon i{
-	margin: 0 10px;
-	position: relative;
-	top:-35px;
-	color: #6E6E6E;
+.name{
+  margin: -8px 5px;
+  width: 80%;
 }
-
-h5{
-	margin-top: 40px;
-	font-weight: bold;
-	position: relative;
-	bottom: 95px;
-	left: 60px;
+/*iconos superiores*/
+.icon{
+  float: right;
+  margin-top: 15px;
 }
 
-p{
-	margin-top:8px;
-	position: relative;
-	bottom: 100px;
-	left: 60px;
-	font-size: 12px;
+/*Formulario para enviar mensajes*/
+.text-box{
+  background: #ddd;
+  padding: 10px;
 }
-/*titulo del chat*/
-#logochat{
-	position: relative;
-	bottom: 10px;
+/*config. del input*/
+#send{
+  width: 90%;
 }
-
-/*barra de chat*/
-
-
-.movicon{
-    margin: 1px;
-    position: relative;
-    top: 25px;
-}
-.chat-input input {
-    margin-right: 30px; 
-    position: relative;
-    width: 450px;
-    left: 50px;  
-    bottom: 40px;
-}
-
-.chat{
-  background:url(../image/chat-panel-bg.png);
-  background-color: #F7F8E0;
-  overflow-y: scroll;
-  width: 100%;
-  height:500px;
-  border-bottom: solid 1px #bbb;
+.p-chat{
+  width: 300px;
+  height: auto;
+  background: #fff;
+  padding: 5px;
+  border-radius: 5px;
+  margin: 3px;
   position: relative;
-  bottom: 15px;
+}
+.r-chat{
+  width: auto;
+  height: auto;
+  background: #c6ffb3;
+  padding: 5px;
+  border-radius: 5px;
+  margin: 3px;
+  margin-left: 280px;
+  position: relative;
+}
+.op-j{
+  width: 100%;
+  height: 500px;
+  background: rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  padding-top: 70px;
+  overflow-y: scroll;
+}
 
-}	
+#andrea{
+  color: #1ad1ff;
+}
+#mariana{
+  color: #ff1a8c;
+}
+#paula{
+  color: #33ffad;
+}
+#aldo{
+  color: #ffcc00;
+}
